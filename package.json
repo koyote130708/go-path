@@ -1,0 +1,24 @@
+{
+    "name": "go-path",
+    "description": "Path object representation and parsing utilities",
+    "author": "Michael Ko",
+    "email": "koyote130708@gmail.com",
+    "version": "0.0.1",
+    "license": "GNU LGPLv3",
+    "keywords": ["path", "path object", "path parsing"],
+    "main": "index.js",
+    "scripts": {
+        "test": "mocha -u tdd test/PathTest.js",
+		"test-coverage": "nyc --reporter=html mocha -u tdd test/PathTest.js",
+        "doc": "documentation build src/Path.js -f md -o README.md",
+        "doc-html": "documentation build src/Path.js -f html -o docs"
+    },
+    "dependencies": {
+    },
+    "devDependencies": {
+        "chai": "^3.5.0",
+        "mocha": "^3.1.2",
+        "documentation": "^13.2.5"
+    },
+    "engine": "node >= 0.10"
+}
